@@ -1,1 +1,27 @@
-# Postgresql-index-performance-analysis
+# PostgreSQL Index Performance Analysis
+
+This repository contains the SQL scripts, Python code, and experimental outputs used in the study **“Measuring the Impact of Data Distribution on B-tree Index Performance”**.  
+The project evaluates how different data distributions influence the effectiveness of B-tree indexing in PostgreSQL by comparing indexed and non-indexed query performance under controlled experimental conditions.
+
+The experiments were conducted using a real-world transactional dataset derived from an online retail database and focus on both point queries and range queries across uniform and skewed data distributions.
+
+---
+
+## Software and Tools
+
+The experiments were conducted using the following tools and technologies:
+
+- **PostgreSQL** (Relational Database Management System)
+- **pgAdmin 4** (Database administration and query execution)
+- **Python 3.9**
+- **Python Libraries**:
+  - pandas
+  - sqlalchemy
+  - psycopg2
+  - matplotlib
+- **Operating System**: macOS
+
+---
+
+## Repository Structure
+
