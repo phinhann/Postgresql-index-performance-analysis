@@ -35,5 +35,5 @@ The experiments were conducted using the following tools and technologies:
 ## Outputs
 EXPLAIN outputs for point (hot/cold) and range queries across:
 
-uniform vs skewed
-indexed vs no-index
+1. uniform vs skewed
+2. indexed vs no-index
