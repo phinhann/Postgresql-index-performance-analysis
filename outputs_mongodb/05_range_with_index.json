@@ -1,0 +1,9 @@
+{
+  "query": { "StockCode_str": { "$gte": "22000", "$lte": "23000" } },
+  "hint": { "StockCode_str": 1 },
+  "winningPlan": "FETCH -> IXSCAN",
+  "nReturned": 401942,
+  "executionTimeMillis": 206,
+  "totalKeysExamined": 401942,
+  "totalDocsExamined": 401942
+}
