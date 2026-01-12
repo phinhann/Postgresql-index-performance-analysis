@@ -42,10 +42,10 @@ The goal is to compare query execution plans and performance **with index vs. fo
 - Collection: `transactions`
 - Data loaded (expected ~1,067,371 documents)
 
-You can verify in Compass (mongosh) before running:
-```js
-db.getName();
-db.transactions.estimatedDocumentCount();
+  You can verify in Compass (mongosh) before running:
+  ```js
+  db.getName();
+  db.transactions.estimatedDocumentCount();
 
 ## Outputs
 EXPLAIN outputs for point (hot/cold) and range queries across:
