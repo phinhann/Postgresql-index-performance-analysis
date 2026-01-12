@@ -31,6 +31,21 @@ The experiments were conducted using the following tools and technologies:
 4. Run sql/03_frequency_hot_cold_selection.sql to confirm StockCode frequency (hot/cold selection).
 5. Run sql/04_index_and_queries_explain.sql to execute the indexed vs no-index workload.
 6. Compare outputs in results/.
+7. MongoDB (Compass) Reproducibility Steps
+
+This project also includes a NoSQL (MongoDB) benchmark on the same `online_retail.transactions` dataset.  
+The goal is to compare query execution plans and performance **with index vs. forced full scan (COLLSCAN)** using MongoDB Compass.
+
+**Prerequisites**
+- MongoDB Compass connected to your cluster
+- Database: `online_retail`
+- Collection: `transactions`
+- Data loaded (expected ~1,067,371 documents)
+
+You can verify in Compass (mongosh) before running:
+```js
+db.getName();
+db.transactions.estimatedDocumentCount();
 
 ## Outputs
 EXPLAIN outputs for point (hot/cold) and range queries across:
