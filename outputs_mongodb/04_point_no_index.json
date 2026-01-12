@@ -1,0 +1,9 @@
+{
+  "query": { "StockCode_str": "85123A" },
+  "hint": { "$natural": 1 },
+  "winningPlan": "COLLSCAN",
+  "nReturned": 5829,
+  "executionTimeMillis": 386,
+  "totalKeysExamined": 0,
+  "totalDocsExamined": 1067371
+}
