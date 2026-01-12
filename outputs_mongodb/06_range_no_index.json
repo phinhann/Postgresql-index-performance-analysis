@@ -1,0 +1,9 @@
+{
+  "query": { "StockCode_str": { "$gte": "22000", "$lte": "23000" } },
+  "hint": { "$natural": 1 },
+  "winningPlan": "COLLSCAN",
+  "nReturned": 401942,
+  "executionTimeMillis": 714,
+  "totalKeysExamined": 0,
+  "totalDocsExamined": 1067371
+}
