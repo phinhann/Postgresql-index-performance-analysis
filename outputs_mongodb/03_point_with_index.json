@@ -1,0 +1,9 @@
+{
+  "query": { "StockCode_str": "85123A" },
+  "hint": { "StockCode_str": 1 },
+  "winningPlan": "FETCH -> IXSCAN",
+  "nReturned": 5829,
+  "executionTimeMillis": 8,
+  "totalKeysExamined": 5829,
+  "totalDocsExamined": 5829
+}
