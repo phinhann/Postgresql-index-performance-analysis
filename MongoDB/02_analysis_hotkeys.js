@@ -1,12 +1,13 @@
 use online_retail;
 
-// BSON type distribution on original StockCode
+// A) BSON type distribution on original StockCode
 db.transactions.aggregate([
-  { $group: { _id: { $type: "$StockCode" }, c: { $sum: 1 } } },
-  { $sort: { c: -1 } }
+  { $project: { t: { $type: "$StockCode" } } },
+  { $group: { _id: "$t", count: { $sum: 1 } } },
+  { $sort: { count: -1 } }
 ]);
 
-// Top-5 hot keys on normalized StockCode_str
+// B) Top-5 hot keys on normalized StockCode_str
 db.transactions.aggregate([
   { $match: { StockCode_str: { $exists: true } } },
   { $group: { _id: "$StockCode_str", c: { $sum: 1 } } },
